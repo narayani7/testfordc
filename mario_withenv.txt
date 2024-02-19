@@ -14,4 +14,4 @@ networks:
     driver: bridge
 
 environment:
-  HELLO: ${"123"}
+  HELLO: ${HELLO}
