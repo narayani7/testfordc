@@ -6,7 +6,7 @@ services:
     image: kaminskypavel/mario
     restart: always
     ports:
-      - "31022:8080"
+      - "31023:8080"
     networks:
       - mec
 networks:
