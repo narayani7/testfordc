@@ -9,9 +9,10 @@ services:
       - "31026:8080"
     networks:
       - mec
+    env_file:
+      - my.env
 networks:
   mec:
     driver: bridge
 
-env_file:
-   - my.env
+
