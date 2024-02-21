@@ -12,7 +12,9 @@ services:
     env_file:
       - ./env/my.env
     environment:
-      - MYTAG=${TAG}
+      - DCENV_FROMENVFILE=${ENVFILE_MYTAG}
+      - DCENV_TAG="DCENV_TAG"
+      - DCENV_FROMPORT=${PORTENV_TAG}
 networks:
   mec:
     driver: bridge
