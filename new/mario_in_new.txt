@@ -10,7 +10,7 @@ services:
     networks:
       - mec
     env_file:
-      - ./env/my.env
+      - ../env/my.env
     environment:
       - DCENV_FROMENVFILE=${ENVFILE_MYTAG}
       - DCENV_TAG="DCENV_TAG"
