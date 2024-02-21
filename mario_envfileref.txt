@@ -11,6 +11,8 @@ services:
       - mec
     env_file:
       - ./env/my.env
+    environment:
+      - MYTAG=${TAG}
 networks:
   mec:
     driver: bridge
