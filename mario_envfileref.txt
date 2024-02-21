@@ -10,7 +10,7 @@ services:
     networks:
       - mec
     env_file:
-      - my.env
+      - ./env/my.env
 networks:
   mec:
     driver: bridge
