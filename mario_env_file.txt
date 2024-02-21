@@ -1,0 +1,16 @@
+version: "2.1"
+services:
+  mariogame:
+    build: .
+    container_name: mariotextapp
+    image: kaminskypavel/mario
+    restart: always
+    ports:
+      - "31025:8080"
+    networks:
+      - mec
+    environment:
+      HELLO: ${HELLO}
+networks:
+  mec:
+    driver: bridge
