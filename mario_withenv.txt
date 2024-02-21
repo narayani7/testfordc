@@ -9,9 +9,8 @@ services:
       - "31025:8080"
     networks:
       - mec
+    environment:
+      HELLO: "123"
 networks:
   mec:
     driver: bridge
-
-environment:
-  HELLO: ${HELLO}
