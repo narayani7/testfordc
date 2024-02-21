@@ -1,0 +1,21 @@
+version: "2.1"
+services:
+  mariogame:
+    build: .
+    container_name: marioapp
+    image: kaminskypavel/mario
+    restart: always
+    ports:
+      - "31025:8080"
+    networks:
+      - mec
+    env_file:
+      - ./env/my.env
+    environment:
+      - DCENV_FROMENVFILE=${ENVFILE_MYTAG}
+      - DCENV_TAG="DCENV_TAG"
+      - DCENV_FROMPORT=${PORTENV_TAG}
+      - DCENV_FROMDOTENV=${DOTENV_MYTAG}
+networks:
+  mec:
+    driver: bridge
