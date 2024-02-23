@@ -1,0 +1,14 @@
+version: "2.1"
+services:
+  helloworld:
+    build: .
+    container_name: helloworld
+    image: hello-world
+    restart: always
+    networks:
+      - mec
+    environment:
+      HELLO: "123"
+networks:
+  mec:
+    driver: bridge
