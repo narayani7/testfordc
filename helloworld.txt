@@ -8,7 +8,7 @@ services:
     networks:
       - mec
     environment:
-      HELLO: "123"
+      HELLO: "hello"
 networks:
   mec:
     driver: bridge
