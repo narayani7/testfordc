@@ -1,9 +1,9 @@
 version: "2.1"
 services:
-  helloworld:
+  mariogame:
     build: .
-    container_name: helloworld
-    image: hello-world
+    container_name: mario
+    image: kaminskypavel/mario
     restart: always
     networks:
       - mec
