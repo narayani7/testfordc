@@ -3,12 +3,12 @@ services:
   mariogame:
     build: .
     container_name: mario
-    image: kaminskypavel/mario
+    image: hello-world
     restart: always
     networks:
       - mec
     environment:
-      HELLO: "hello1223"
+      HELLO: "hello1223-world"
 networks:
   mec:
     driver: bridge
