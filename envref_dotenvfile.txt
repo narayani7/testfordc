@@ -11,6 +11,7 @@ services:
       - mec
     environment:
       - DCENV_FROMDOTENV=${DOTENV_MYTAG}
+      - DCENV_TAG="DCENV_TAG"
 networks:
   mec:
     driver: bridge
