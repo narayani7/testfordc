@@ -15,7 +15,6 @@ services:
       - DCENV_FROMENVFILE=${ENVFILE_MYTAG}
       - DCENV_TAG="DCENV_TAG"
       - DCENV_FROMPORT=${PORTENV_TAG}
-      - DCENV_FROMDOTENV=${DOTENV_MYTAG}
 networks:
   mec:
     driver: bridge
